@@ -1,2 +1,2 @@
 # GradleTapDemo
-Working gradle plugin code for https://thomassundberg.wordpress.com/2015/03/22/a-gradle-plugin-written-in-java/
+A sample of gradle plugin with Java (HelloPlugin) & Groovy (GreetingPlugin)
