@@ -6,12 +6,12 @@ import org.gradle.api.tasks.TaskAction;
 /**
  * Created by abangkis on 14/02/2016.
  */
-public class DemoTask extends DefaultTask {
+public class HelloTask extends DefaultTask {
     @TaskAction
     public void greet() {
-        DemoPluginExtension extension = getProject().getExtensions().findByType(DemoPluginExtension.class);
+        HelloPluginExtension extension = getProject().getExtensions().findByType(HelloPluginExtension.class);
         if (extension == null) {
-            extension = new DemoPluginExtension();
+            extension = new HelloPluginExtension();
         }
 
         String message = extension.getMessage();

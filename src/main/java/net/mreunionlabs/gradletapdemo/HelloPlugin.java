@@ -6,11 +6,11 @@ import org.gradle.api.Project;
 /**
  * Created by abangkis on 14/02/2016.
  */
-public class DemoPlugin implements Plugin<Project> {
+public class HelloPlugin implements Plugin<Project> {
 
     @Override
     public void apply(Project project) {
-        project.getExtensions().create("demoSetting", DemoPluginExtension.class);
-        project.getTasks().create("demo", DemoTask.class);
+        project.getExtensions().create("helloSetting", HelloPluginExtension.class);
+        project.getTasks().create("hello", HelloTask.class);
     }
 }
